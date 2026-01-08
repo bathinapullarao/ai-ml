@@ -426,7 +426,8 @@ Handling unstructured data: Models trained on structured data can easily learn f
 Handling large data: Due to the introduction of graphics processing units (GPUs), deep learning models can process large amounts of data with lightning speed.
 High Accuracy: Deep learning models provide the most accurate results in computer visions, natural language processing (NLP), and audio processing.
 Pattern Recognition: Most models require machine learning engineer intervention, but deep learning models can detect all kinds of patterns automatically.
-<img width="801" height="400" alt="image" src="https://github.com/user-attachments/assets/d687e199-b6ee-42b6-a948-ed4fd77f215f" />
+![Alt text](<img width="801" height="400" alt="image" src="https://github.com/user-attachments/assets/e1d7f709-1361-49ea-9941-d8dbe4a4238a" />)
+
 
 ```
 
