@@ -1,7 +1,16 @@
-
-
+#Learning Objectives
 ``` bash
-
+Explain the core components of artificial intelligence and machine learning.
+Differentiate between training, validation, and testing phases in ML workflows.
+Identify and compare types of ML.
+Describe real-world use cases for each ML type and formulate simple examples.
+Assess data quality and understand its impact on model performance.
+Describe key ML algorithms.
+Explain the structure and components of neural networks.
+Differentiate deep learning architectures: CNNs, RNNs and LSTMs.
+Define Natural Language Processing and Computer Vision fundamentals.
+ Understand generative AI concepts.
+Define agentic AI and its components.
 ```
 
 
