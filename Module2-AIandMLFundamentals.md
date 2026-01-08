@@ -473,6 +473,7 @@ Backpropagation is the learning algorithm that allows a neural network to adjust
 Gradient Descent is an optimization method used in machine learning to minimize a model’s loss (error). Think of the loss as a landscape of hills and valleys, where each point represents a specific set of model weights. The goal is to reach the lowest valley—the point where the error is minimum. Gradient Descent computes the gradient (slope) of the loss with respect to each weight and updates the weights in the opposite direction of that slope, because that is the direction in which the loss decreases. The size of each step is controlled by the learning rate: too small makes training slow, too large can overshoot or diverge. This updating process repeats across many iterations (epochs), steadily guiding the model toward lower error. Gradient Descent is the fundamental engine behind training neural networks and many other ML models.
 ```
 ########################################################################################################################################################################################################################################################################################################################
+
 # Neural Networks
 
 ``` bash
@@ -484,11 +485,14 @@ The adjustable parameters within these neurons are called weights and biases. As
 ```
 ![layers](https://github.com/user-attachments/assets/9a5e9255-648c-46d1-abcb-a05684d0654b)
 
-
 ``` bash
+During the training phase, the network is presented with data, makes a prediction based on its current knowledge (weights and biases), and then evaluates the accuracy of its prediction. This evaluation is done using a loss function. After making a prediction, the loss function calculates how far off the prediction was from the actual result, and the primary goal of training becomes minimizing this "loss" or error. Backpropagation plays a pivotal role in this learning process. Once the error or loss is determined, backpropagation helps adjust the weights and biases to reduce this error. It acts as a feedback mechanism, identifying which neurons contributed most to the error and refining them for better future predictions.
 
+To adjust the weights and biases efficiently, techniques like "gradient descent" are employed. Imagine navigating a hilly terrain, and your goal is to find the lowest point. The path you take, always moving towards a lower point, is guided by gradient descent.
+
+Lastly, an essential component of neural networks is the activation function. This function decides whether a neuron should be activated based on the weighted sum of its inputs and a bias.
 ```
-
+![input](https://github.com/user-attachments/assets/8eece7c9-e827-4096-8ca4-9fb60c21a525)
 
 ``` bash
 
