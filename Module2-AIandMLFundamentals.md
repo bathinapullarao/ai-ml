@@ -619,29 +619,72 @@ RNNs are applied in robotics for tasks such as trajectory prediction and control
 5. Limited Context Understanding
 6. Prone to Overfitting
 ```
-
-
+####################################################################################################################################### 
+# LSTMs (Long Short-Term Memory networks)
 ``` bash
-
+LSTMs can capture long-term dependencies in sequential data making them ideal for tasks like language translation, speech recognition and time series forecasting. Unlike traditional RNNs which use a single hidden state passed through time LSTMs introduce a memory cell that holds information over extended periods addressing the challenge of learning long-term dependencies.
 ```
-
-
+# Key Features of LSTMs
 ``` bash
+Preventing vanishing gradient problem:
+LSTM (Long Short-Term Memory) networks are specifically designed to combat the vanishing gradient problem often encountered in traditional recurrent neural networks. This allows them to learn from data over long sequences without the gradients becoming too small to influence the weights effectively.
 
+remember long-term dependencies:
+One of the key features of LSTM networks is their ability to remember long-term dependencies in sequential data. This is crucial for tasks where context from earlier in the sequence is important for understanding later parts.
+
+cell state and gate mechanisms:
+LSTM networks utilize unique cell state and gate mechanisms to manage the flow of information. The cell state acts as a conveyor belt, carrying relevant information throughout the network while the gates regulate what information is added or removed.
+
+variety of sequential data:
+Due to their architecture, LSTM networks are suitable for a wide variety of sequential data tasks. These include natural language processing, time series prediction, and even music generation, where understanding context and sequence is crucial.
+
+Applications in natural language processing:
+In natural language processing, LSTM networks excel at tasks like language translation and sentiment analysis. Their ability to maintain context over long sentences allows them to generate more accurate and coherent results.
+
+time series forecasting:
+LSTM networks are also widely used in time series forecasting. They can learn from historical data points to make predictions about future values, which is invaluable in fields such as finance and meteorology.
+
+music generation and art:
+Moreover, LSTM networks have been applied in creative fields such as music generation. They can analyze patterns in existing music and generate new compositions that mimic those styles, showcasing their versatility beyond conventional data tasks.
 ```
-
-
+# How LSTMs Work
 ``` bash
+LSTM architecture has a chain structure that contains four neural networks and different memory blocks called cells.
 
+Information is retained by the cells and the memory manipulations are done by the gates. There are three gates - 
+
+1. Forget Gate
+
+The information that is no longer useful in the cell state is removed with the forget gate. Two inputs: input at the particular time and previous cell output are fed to the gate and multiplied with weight matrices followed by the addition of bias. The resultant is passed through sigmoid activation function which gives output in range of [0,1]. If for a particular cell state the output is 0 or near to 0, the piece of information is forgotten and for output of 1 or near to 1, the information is retained for future use. 
+
+2. Input gate
+
+The addition of useful information to the cell state is done by the input gate. First the information is regulated using the sigmoid function and filter the values to be remembered similar to the forget gate. Then, a vector is created using tanh function that gives an output from -1 to +1 which contains all the possible values from the inputs​. At last the values of the vector and the regulated values are multiplied to obtain the useful information.
+
+3. Output gate
+
+The output gate is responsible for deciding what part of the current cell state should be sent as the hidden state (output) for this time step. First, the gate uses a sigmoid function to determine which information from the current cell state will be output. Next, the current cell state is passed through a tanh activation to scale its values between −1 and +1. Finally, this transformed cell state is multiplied element-wise to produce the hidden state.
 ```
+![lstm](https://github.com/user-attachments/assets/49ca6d4a-6f6e-482e-96c8-9d3caf0fb298) 
+
+# Applications of LSTMs
 
 ``` bash
-
+Handles long-term dependencies
+Good for sequential data
+Gated memory control
+Better context understanding
+Works with variable-length input
 ```
-
-
+# Challenges in Using LSTMs
 ``` bash
-
+Slow training
+High computational cost
+Limited scalability
+Struggles with very long sequences
+Complex architecture
+Outperformed by Transformers
+Difficult to interpret
 ```
 
 
