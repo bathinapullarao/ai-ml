@@ -474,6 +474,7 @@ Gradient Descent is an optimization method used in machine learning to minimize 
 ```
 ########################################################################################################################################################################################################################################################################################################################
 # Neural Networks
+
 ``` bash
 Neural Networks are computational models inspired by the human brain's interconnected neuron structure. 
 
