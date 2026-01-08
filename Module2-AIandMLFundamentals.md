@@ -428,9 +428,61 @@ High Accuracy: Deep learning models provide the most accurate results in compute
 Pattern Recognition: Most models require machine learning engineer intervention, but deep learning models can detect all kinds of patterns automatically.
 
 ```
-
 ![deep](https://github.com/user-attachments/assets/a405c4e5-4c2e-45c5-8cab-45d42dc5c513)
 
+# Core Concepts of Deep Learning
+``` bash
+The basic concepts of deep learning includes
+Neural Networks 
+Activation Functions 
+Loss Functions 
+Optimizers 
+Backpropagation 
+Gradient Descent
+```
+# Neural Networks
+``` bash
+Neural networks are machine learning models that mimic the complex functions of the human brain. These models consist of interconnected nodes or neurons that process data, learn patterns and enable tasks such as pattern recognition and decision-making. 
+```
+# Activation Functions
+![activefunction](https://github.com/user-attachments/assets/d441ea71-509c-4fb6-923b-01656701fe0d)
+``` bash
+An activation function in a neural network is a mathematical function applied to the output of a neuron. It introduces non-linearity, enabling the model to learn and represent complex data patterns. Without it, even a deep neural network would behave like a simple linear regression model.
+
+Activation functions decide whether a neuron should be activated based on the weighted sum of inputs and a bias term. They also make backpropagation possible by providing gradients for weight updates.
+```
+# Loss Functions
+``` bash
+A loss function is a mathematical way to measure how good or bad a model’s predictions are compared to the actual results. It gives a single number that tells us how far off the predictions are. The smaller the number, the better the model is doing. Loss functions are used to train models. Loss functions are important because they:
+
+Guide Model Training: During training, algorithms use the loss function to adjust the model's parameters and try to reduce the error and improve the model’s predictions.
+Measure Performance: By finding the difference between predicted and actual values and it can be used for evaluating the model's performance.
+Affect learning behavior: Different loss functions can make the model learn in different ways depending on what kind of mistakes they make.
+```
+# Optimizers
+``` bash
+Optimizers are crucial as algorithms that dynamically fine-tune a model’s parameters throughout the training process, aiming to minimize a predefined loss function. These specialized algorithms facilitate the learning process of neural networks by iteratively refining the weights and biases based on the feedback received from the data. Well-known optimizers in deep learning encompass Stochastic Gradient Descent(SGD), Adam, and RMSprop, each equipped with distinct update rules, learning rates, and momentum strategies, all geared towards the overarching goal of discovering and converging upon optimal model parameters, thereby enhancing overall performance.
+```
+Backpropagation
+``` bash
+Backpropagation is the learning algorithm that allows a neural network to adjust its weights by efficiently computing how much each weight contributed to the final prediction error. After a forward pass generates the output, the loss function measures the difference between the predicted value and the true value. Backpropagation then works backward from the output layer to the input layer, using the chain rule of calculus to calculate gradients—how sensitive the loss is to each weight in the network. These gradients indicate the direction and amount by which each weight should be changed to reduce the loss. Finally, an optimizer such as gradient descent updates the weights accordingly. Repeating this forward-and-backward process over many training examples gradually trains the network to make more accurate predictions.
+```
+<img width="1358" height="697" alt="forword and backword propogation" src="https://github.com/user-attachments/assets/643bbc4a-ad57-48b7-876a-806235e49e9b" />
+# Gradient Descent
+``` bash
+Gradient Descent is an optimization method used in machine learning to minimize a model’s loss (error). Think of the loss as a landscape of hills and valleys, where each point represents a specific set of model weights. The goal is to reach the lowest valley—the point where the error is minimum. Gradient Descent computes the gradient (slope) of the loss with respect to each weight and updates the weights in the opposite direction of that slope, because that is the direction in which the loss decreases. The size of each step is controlled by the learning rate: too small makes training slow, too large can overshoot or diverge. This updating process repeats across many iterations (epochs), steadily guiding the model toward lower error. Gradient Descent is the fundamental engine behind training neural networks and many other ML models.
+```
+########################################################################################################################################################################################################################################################################################################################
+# Neural Networks
+``` bash
+Neural Networks are computational models inspired by the human brain's interconnected neuron structure. 
+
+At its core, a neural network consists of neurons, which are the fundamental units. These neurons receive inputs, process them, and produce an output. They are organized into distinct layers: an Input Layer that receives the data, several Hidden Layers that process this data, and an Output Layer that provides the final decision or prediction.
+
+The adjustable parameters within these neurons are called weights and biases. As the network learns, these weights and biases are adjusted, determining the strength of input signals. 
+```
+![layers](https://github.com/user-attachments/assets/9a5e9255-648c-46d1-abcb-a05684d0654b)
+
 
 ``` bash
 
@@ -447,74 +499,6 @@ Pattern Recognition: Most models require machine learning engineer intervention,
 ```
 
 
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
 
 ``` bash
 
@@ -544,5 +528,439 @@ Pattern Recognition: Most models require machine learning engineer intervention,
 ``` bash
 
 ```
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
+
+``` bash
+
+```
+
 
 
